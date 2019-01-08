@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="ResourceRegistry"
+             SeparateXMLFiles="false" Package="com.service.hr.RESTmodel" ClientType="Generic">
+  <pageMap>
+    <page path="v1_locations" usageId="v1_HrServiceAM_LocationsVOResources"/>
+    <page path="v1_departments" usageId="v1_HrServiceAM_DepartmentsVOResources"/>
+    <page path="v1_employees" usageId="v1_HrServiceAM_EmployeesVOResources"/>
+  </pageMap>
+  <dataControlUsages>
+    <BC4JDataControl id="HrServiceAMDataControl" Package="com.service.hr.RESTmodel.am"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="HrServiceAMLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+  <pageDefinitionUsages>
+    <page id="v1_HrServiceAM_LocationsVOResources"
+          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_LocationsVOResources"/>
+    <page id="v1_HrServiceAM_DepartmentsVOResources"
+          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_DepartmentsVOResources"/>
+    <page id="v1_HrServiceAM_EmployeesVOResources"
+          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_EmployeesVOResources"/>
+  </pageDefinitionUsages>
+</Application>
