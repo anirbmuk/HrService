@@ -14,7 +14,7 @@
     Name="DepartmentsVO1"
     ViewObjectName="com.service.hr.RESTmodel.vo.DepartmentsVO"/>
   <ViewUsage
-    Name="EmployeesVO1"
+    Name="EmployeesNoAuthView"
     ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"/>
   <ViewUsage
     Name="EmployeesVO2"
@@ -24,6 +24,9 @@
     ViewObjectName="com.service.hr.RESTmodel.vo.DepartmentsVO"/>
   <ViewUsage
     Name="EmployeesVO3"
+    ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"/>
+  <ViewUsage
+    Name="EmployeesAuthView"
     ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"/>
   <ViewLinkUsage
     Name="EmpDeptFkLink1"

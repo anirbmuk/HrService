@@ -15,6 +15,14 @@
   PageIterMode="Full"
   FetchSize="27"
   FetchMode="FETCH_AS_NEEDED">
+  <Variable
+    Name="Bind_FirstName"
+    Kind="viewcriteria"
+    Type="java.lang.String"/>
+  <Variable
+    Name="Bind_LastName"
+    Kind="viewcriteria"
+    Type="java.lang.String"/>
   <EntityUsage
     Name="EmployeeEO"
     Entity="com.service.hr.RESTmodel.eo.EmployeeEO"/>
@@ -91,6 +99,50 @@
     EntityAttrName="DepartmentId"
     EntityUsage="EmployeeEO"
     AliasName="DEPARTMENT_ID"/>
+  <ViewCriteria
+    Name="EmployeesNameCriteria"
+    ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"
+    Conjunction="AND">
+    <Properties Name="_Props">
+      <CustomProperties>
+        <Property
+          Name="autoExecute"
+          Value="false"/>
+        <Property
+          Name="mode"
+          Value="Basic"/>
+        <Property
+          Name="allowConjunctionOverride"
+          Value="true"/>
+        <Property
+          Name="showInList"
+          Value="true"/>
+        <Property
+          Name="displayOperators"
+          Value="InAdvancedMode"/>
+      </CustomProperties>
+    </Properties>
+    <ViewCriteriaRow
+      Name="EmployeesVOCriteria_row_0"
+      UpperColumns="1">
+      <ViewCriteriaItem
+        Name="FirstName"
+        ViewAttribute="FirstName"
+        Operator="CONTAINS"
+        Conjunction="AND"
+        Value=":Bind_FirstName"
+        IsBindVarValue="true"
+        Required="Optional"/>
+      <ViewCriteriaItem
+        Name="LastName"
+        ViewAttribute="LastName"
+        Operator="CONTAINS"
+        Conjunction="AND"
+        Value=":Bind_LastName"
+        IsBindVarValue="true"
+        Required="Optional"/>
+    </ViewCriteriaRow>
+  </ViewCriteria>
   <ViewLinkAccessor
     Name="DepartmentsVO"
     ViewLink="com.service.hr.RESTmodel.vo.vl.DeptMgrFkLink"
@@ -111,4 +163,21 @@
     <PropertiesBundle
       PropertiesFile="com.service.hr.RESTmodel.ModelBundle"/>
   </ResourceBundle>
+  <RowFinders>
+    <ExpressionRowFinder
+      Name="findEmpByName">
+      <ViewCriteriaUsage
+        Name="EmployeesNameCriteria"
+        FullName="com.service.hr.RESTmodel.vo.EmployeesVO.EmployeesNameCriteria"/>
+      <VarExpressionMap
+        Name="findEmpByNameMap">
+        <VariableExpressionMapping
+          Name="Bind_LastName"
+          Variable="Bind_LastName"/>
+        <VariableExpressionMapping
+          Name="Bind_FirstName"
+          Variable="Bind_FirstName"/>
+      </VarExpressionMap>
+    </ExpressionRowFinder>
+  </RowFinders>
 </ViewObject>

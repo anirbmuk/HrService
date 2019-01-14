@@ -4,7 +4,8 @@
   <pageMap>
     <page path="v1_locations" usageId="v1_HrServiceAM_LocationsVOResources"/>
     <page path="v1_departments" usageId="v1_HrServiceAM_DepartmentsVOResources"/>
-    <page path="v1_employees" usageId="v1_HrServiceAM_EmployeesVOResources"/>
+    <page path="v1_employeesauth" usageId="v1_HrServiceAM_EmployeesAuthVOResources"/>
+    <page path="v1_employeesnoauth" usageId="v1_HrServiceAM_EmployeesNoAuthVOResources"/>
   </pageMap>
   <dataControlUsages>
     <BC4JDataControl id="HrServiceAMDataControl" Package="com.service.hr.RESTmodel.am"
@@ -18,7 +19,9 @@
           path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_LocationsVOResources"/>
     <page id="v1_HrServiceAM_DepartmentsVOResources"
           path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_DepartmentsVOResources"/>
-    <page id="v1_HrServiceAM_EmployeesVOResources"
-          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_EmployeesVOResources"/>
+    <page id="v1_HrServiceAM_EmployeesAuthVOResources"
+          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_EmployeesAuthVOResources"/>
+    <page id="v1_HrServiceAM_EmployeesNoAuthVOResources"
+          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_EmployeesNoAuthVOResources"/>
   </pageDefinitionUsages>
 </Application>

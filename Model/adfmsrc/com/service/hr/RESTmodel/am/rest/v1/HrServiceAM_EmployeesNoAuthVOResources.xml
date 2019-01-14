@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="HrServiceAM_EmployeesVOResources" Package="com.service.hr.RESTmodel.am.rest.v1"
+                usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="EmployeesNoAuthView" RangeSize="5" DataControl="HrServiceAMDataControl" id="EmployeesNoAuthVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="EmployeesNoAuthVO1Iter" id="employeesnoauth" AccessorFolder="Always">
+      <nodeDefinition DefName="com.service.hr.RESTmodel.vo.EmployeesVO"
+                      Name="com.service.hr.RESTmodel.vo.EmployeesVO" HintsSuffix="NoAuthView"/>
+    </tree>
+  </bindings>
+</pageDefinition>

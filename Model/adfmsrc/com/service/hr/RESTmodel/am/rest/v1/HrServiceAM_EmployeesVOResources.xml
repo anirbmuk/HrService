@@ -5,12 +5,6 @@
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <iterator Binds="EmployeesVO1" RangeSize="5" DataControl="HrServiceAMDataControl" id="EmployeesVO1Iter"/>
   </executables>
-  <bindings>
-    <tree IterBinding="EmployeesVO1Iter" id="employees" AccessorFolder="Always">
-      <nodeDefinition DefName="com.service.hr.RESTmodel.vo.EmployeesVO"
-                      Name="com.service.hr.RESTmodel.vo.EmployeesVO"/>
-    </tree>
-  </bindings>
+  <bindings/>
 </pageDefinition>
