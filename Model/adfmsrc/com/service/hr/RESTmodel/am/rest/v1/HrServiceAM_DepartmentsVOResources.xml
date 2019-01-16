@@ -10,7 +10,12 @@
   <bindings>
     <tree IterBinding="DepartmentsVO1Iter" id="departments" AccessorFolder="Always">
       <nodeDefinition DefName="com.service.hr.RESTmodel.vo.DepartmentsVO"
-                      Name="com.service.hr.RESTmodel.vo.DepartmentsVO"/>
+                      Name="com.service.hr.RESTmodel.vo.DepartmentsVO">
+        <Accessors>
+          <Item Value="EmployeesVO"/>
+        </Accessors>
+      </nodeDefinition>
+      <nodeDefinition DefName="com.service.hr.RESTmodel.vo.EmployeesVO" Name="com.service.hr.RESTmodel.vo.EmployeesVO"/>
     </tree>
   </bindings>
 </pageDefinition>
