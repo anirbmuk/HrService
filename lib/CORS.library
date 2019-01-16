@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library name="CORS" id="oracle..cors" deployed="true" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description/>
+  <classpath>cors-filter-2.6.jar</classpath>
+  <classpath>java-property-utils-1.9.1.jar</classpath>
+</library>
