@@ -11,5 +11,4 @@
 /RESTWebService/classes
 /RESTWebService/deploy
 /RESTWebService/servers
-/lib/*.jar
 /lib/*.war
