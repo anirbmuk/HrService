@@ -10,7 +10,8 @@
   DBObjectName="EMPLOYEES"
   AliasName="EmployeeEO"
   BindingStyle="OracleName"
-  RowClass="com.service.hr.RESTmodel.eo.EmployeeEOImpl">
+  RowClass="com.service.hr.RESTmodel.eo.EmployeeEOImpl"
+  xmlns:validation="http://xmlns.oracle.com/adfm/validation">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Init|Delete|Access|DML"/>
     <Attr Name="_isCodegen" Value="true"/>
@@ -107,7 +108,21 @@
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
-    TableName="EMPLOYEES"/>
+    TableName="EMPLOYEES">
+    <validation:MethodValidationBean
+      Name="SalaryRuleRange"
+      ResId="com.service.hr.RESTmodel.eo.EmployeeEO.Salary_Rule_0"
+      Description="Validate minimum salary range"
+      MethodName="validateSalary">
+      <validation:ResExpressions
+        Name="SalaryRuleRange_ResExprList">
+        <validation:Expression
+          Name="0"
+          trustMode="untrusted"
+          CodeSourceName="EmployeeEORow"/>
+      </validation:ResExpressions>
+    </validation:MethodValidationBean>
+  </Attribute>
   <Attribute
     Name="CommissionPct"
     Precision="2"
@@ -216,4 +231,8 @@
       <Item Value="com.service.hr.RESTmodel.eo.EmployeeEO.ManagerId"/>
     </AttrArray>
   </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="com.service.hr.RESTmodel.ModelBundle"/>
+  </ResourceBundle>
 </Entity>

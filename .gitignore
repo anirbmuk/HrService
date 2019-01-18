@@ -11,4 +11,6 @@
 /RESTWebService/classes
 /RESTWebService/deploy
 /RESTWebService/servers
+Model/deploy
+/Model/classes
 /lib/*.war

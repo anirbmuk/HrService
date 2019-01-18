@@ -18,6 +18,31 @@ import oracle.jbo.server.TransactionEvent;
 // ---------------------------------------------------------------------
 public class EmployeeEOImpl extends EntityImpl {
     /**
+     * Validation method for Salary.
+     */
+    public boolean validateSalary(BigDecimal salary) {
+        if (salary != null) {
+            if (getJobId() != null) {
+                final String jobId = getJobId();
+                if (jobId.equals("AD_VP")) {
+                    if (salary.compareTo(new BigDecimal(15000)) == -1) {
+                        return false;
+                    }
+                } else if (jobId.equals("AD_PRES")) {
+                    if (salary.compareTo(new BigDecimal(22500)) == -1) {
+                        return false;
+                    }
+                } else if (jobId.equals("IT_PROG")) {
+                    if (salary.compareTo(new BigDecimal(4000)) == -1) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
      * AttributesEnum: generated enum for identifying attributes and accessors. DO NOT MODIFY.
      */
     protected enum AttributesEnum {
