@@ -365,6 +365,17 @@ public class EmployeeEOImpl extends EntityImpl {
         super.lock();
     }
 
+
+    @Override
+    protected void prepareForDML(int operation, TransactionEvent transactionEvent) {
+        if (operation == DML_INSERT || operation == DML_UPDATE) {
+            if (getSalary() == null) {
+                setSalary(new BigDecimal(4500));
+            }
+        }
+        super.prepareForDML(operation, transactionEvent);
+    }
+
     /**
      * Custom DML update/insert/delete logic here.
      * @param operation the operation type

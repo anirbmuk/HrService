@@ -1,5 +1,7 @@
 package com.service.hr.RESTmodel.eo;
 
+import java.math.BigDecimal;
+
 import oracle.jbo.AttributeList;
 import oracle.jbo.Key;
 import oracle.jbo.RowIterator;

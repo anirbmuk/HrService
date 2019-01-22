@@ -108,7 +108,8 @@
     SQLType="NUMERIC"
     Type="java.math.BigDecimal"
     ColumnType="NUMBER"
-    TableName="EMPLOYEES">
+    TableName="EMPLOYEES"
+    DefaultValue="5500">
     <validation:MethodValidationBean
       Name="SalaryRuleRange"
       ResId="com.service.hr.RESTmodel.eo.EmployeeEO.Salary_Rule_0"
