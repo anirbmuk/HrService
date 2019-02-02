@@ -57,6 +57,7 @@ public class EmployeeEOImpl extends EntityImpl {
         CommissionPct,
         ManagerId,
         DepartmentId,
+        ActiveFlag,
         DepartmentEO,
         EmployeeEO,
         ManagerIdEmployeeEO,
@@ -96,6 +97,7 @@ public class EmployeeEOImpl extends EntityImpl {
     public static final int COMMISSIONPCT = AttributesEnum.CommissionPct.index();
     public static final int MANAGERID = AttributesEnum.ManagerId.index();
     public static final int DEPARTMENTID = AttributesEnum.DepartmentId.index();
+    public static final int ACTIVEFLAG = AttributesEnum.ActiveFlag.index();
     public static final int DEPARTMENTEO = AttributesEnum.DepartmentEO.index();
     public static final int EMPLOYEEEO = AttributesEnum.EmployeeEO.index();
     public static final int MANAGERIDEMPLOYEEEO = AttributesEnum.ManagerIdEmployeeEO.index();
@@ -289,6 +291,22 @@ public class EmployeeEOImpl extends EntityImpl {
      */
     public void setDepartmentId(Integer value) {
         setAttributeInternal(DEPARTMENTID, value);
+    }
+
+    /**
+     * Gets the attribute value for ActiveFlag, using the alias name ActiveFlag.
+     * @return the value of ActiveFlag
+     */
+    public String getActiveFlag() {
+        return (String) getAttributeInternal(ACTIVEFLAG);
+    }
+
+    /**
+     * Sets <code>value</code> as the attribute value for ActiveFlag.
+     * @param value value to set the ActiveFlag
+     */
+    public void setActiveFlag(String value) {
+        setAttributeInternal(ACTIVEFLAG, value);
     }
 
     /**

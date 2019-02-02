@@ -99,6 +99,14 @@
     EntityAttrName="DepartmentId"
     EntityUsage="EmployeeEO"
     AliasName="DEPARTMENT_ID"/>
+  <ViewAttribute
+    Name="ActiveFlag"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="ActiveFlag"
+    EntityUsage="EmployeeEO"
+    AliasName="ACTIVE_FLAG"
+    TypeValueMapPropertySet="oracle.jbo.valuemaps.BooleanYNPropertySet"/>
   <ViewCriteria
     Name="EmployeesNameCriteria"
     ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"

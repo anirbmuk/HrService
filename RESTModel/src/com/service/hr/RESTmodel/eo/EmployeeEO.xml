@@ -151,6 +151,20 @@
     Type="java.lang.Integer"
     ColumnType="NUMBER"
     TableName="EMPLOYEES"/>
+  <Attribute
+    Name="ActiveFlag"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="ACTIVE_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="EMPLOYEES"
+    TypeValueMapPropertySet="oracle.jbo.valuemaps.BooleanYNPropertySet">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
   <AccessorAttribute
     Name="DepartmentEO"
     Association="com.service.hr.RESTmodel.eo.as.DeptMgrFkAssoc"
