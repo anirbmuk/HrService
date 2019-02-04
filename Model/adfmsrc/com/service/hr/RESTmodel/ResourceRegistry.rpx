@@ -6,6 +6,7 @@
     <page path="v1_departments" usageId="v1_HrServiceAM_DepartmentsVOResources"/>
     <page path="v1_employeesauth" usageId="v1_HrServiceAM_EmployeesAuthVOResources"/>
     <page path="v1_employeesnoauth" usageId="v1_HrServiceAM_EmployeesNoAuthVOResources"/>
+    <page path="v1_salarydist" usageId="v1_HrServiceAM_SalaryDistributionRVOResources"/>
   </pageMap>
   <dataControlUsages>
     <BC4JDataControl id="HrServiceAMDataControl" Package="com.service.hr.RESTmodel.am"
@@ -23,5 +24,7 @@
           path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_EmployeesAuthVOResources"/>
     <page id="v1_HrServiceAM_EmployeesNoAuthVOResources"
           path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_EmployeesNoAuthVOResources"/>
+    <page id="v1_HrServiceAM_SalaryDistributionRVOResources"
+          path="com.service.hr.RESTmodel.am.rest.v1.HrServiceAM_SalaryDistributionRVOResources"/>
   </pageDefinitionUsages>
 </Application>

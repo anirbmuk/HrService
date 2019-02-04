@@ -28,6 +28,9 @@
   <ViewUsage
     Name="EmployeesAuthView"
     ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"/>
+  <ViewUsage
+    Name="SalaryDistributionRVO1"
+    ViewObjectName="com.service.hr.RESTmodel.vo.SalaryDistributionRVO"/>
   <ViewLinkUsage
     Name="EmpDeptFkLink1"
     ViewLinkObjectName="com.service.hr.RESTmodel.vo.vl.EmpDeptFkLink"
