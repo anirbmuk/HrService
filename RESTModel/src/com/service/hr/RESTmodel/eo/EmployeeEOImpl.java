@@ -7,6 +7,7 @@ import java.sql.Timestamp;
 import oracle.jbo.AttributeList;
 import oracle.jbo.Key;
 import oracle.jbo.RowIterator;
+import oracle.jbo.domain.BlobDomain;
 import oracle.jbo.server.EntityDefImpl;
 import oracle.jbo.server.EntityImpl;
 import oracle.jbo.server.TransactionEvent;
@@ -58,6 +59,7 @@ public class EmployeeEOImpl extends EntityImpl {
         ManagerId,
         DepartmentId,
         ActiveFlag,
+        ProfileImage,
         DepartmentEO,
         EmployeeEO,
         ManagerIdEmployeeEO,
@@ -98,6 +100,7 @@ public class EmployeeEOImpl extends EntityImpl {
     public static final int MANAGERID = AttributesEnum.ManagerId.index();
     public static final int DEPARTMENTID = AttributesEnum.DepartmentId.index();
     public static final int ACTIVEFLAG = AttributesEnum.ActiveFlag.index();
+    public static final int PROFILEIMAGE = AttributesEnum.ProfileImage.index();
     public static final int DEPARTMENTEO = AttributesEnum.DepartmentEO.index();
     public static final int EMPLOYEEEO = AttributesEnum.EmployeeEO.index();
     public static final int MANAGERIDEMPLOYEEEO = AttributesEnum.ManagerIdEmployeeEO.index();
@@ -307,6 +310,22 @@ public class EmployeeEOImpl extends EntityImpl {
      */
     public void setActiveFlag(String value) {
         setAttributeInternal(ACTIVEFLAG, value);
+    }
+
+    /**
+     * Gets the attribute value for ProfileImage, using the alias name ProfileImage.
+     * @return the value of ProfileImage
+     */
+    public BlobDomain getProfileImage() {
+        return (BlobDomain) getAttributeInternal(PROFILEIMAGE);
+    }
+
+    /**
+     * Sets <code>value</code> as the attribute value for ProfileImage.
+     * @param value value to set the ProfileImage
+     */
+    public void setProfileImage(BlobDomain value) {
+        setAttributeInternal(PROFILEIMAGE, value);
     }
 
     /**

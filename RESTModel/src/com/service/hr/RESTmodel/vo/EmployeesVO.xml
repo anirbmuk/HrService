@@ -107,6 +107,21 @@
     EntityUsage="EmployeeEO"
     AliasName="ACTIVE_FLAG"
     TypeValueMapPropertySet="oracle.jbo.valuemaps.BooleanYNPropertySet"/>
+  <ViewAttribute
+    Name="ProfileImage"
+    IsQueriable="false"
+    PrecisionRule="true"
+    EntityAttrName="ProfileImage"
+    EntityUsage="EmployeeEO"
+    AliasName="PROFILE_IMAGE">
+    <Properties>
+      <CustomProperties>
+        <Property
+          Name="contentType"
+          Value="image/png"/>
+      </CustomProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewCriteria
     Name="EmployeesNameCriteria"
     ViewObjectName="com.service.hr.RESTmodel.vo.EmployeesVO"
@@ -188,4 +203,8 @@
       </VarExpressionMap>
     </ExpressionRowFinder>
   </RowFinders>
+  <SortCriteria>
+    <Sort
+      Attribute="EmployeeId"/>
+  </SortCriteria>
 </ViewObject>

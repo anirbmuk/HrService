@@ -165,6 +165,14 @@
       <Attr Name="_DisplaySize" Value="1"/>
     </DesignTime>
   </Attribute>
+  <Attribute
+    Name="ProfileImage"
+    IsQueriable="false"
+    ColumnName="PROFILE_IMAGE"
+    SQLType="BLOB"
+    Type="oracle.jbo.domain.BlobDomain"
+    ColumnType="BLOB"
+    TableName="EMPLOYEES"/>
   <AccessorAttribute
     Name="DepartmentEO"
     Association="com.service.hr.RESTmodel.eo.as.DeptMgrFkAssoc"
