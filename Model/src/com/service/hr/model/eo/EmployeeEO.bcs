@@ -1,0 +1,12 @@
+//Groovy Scripts for com.service.hr.model.eo.EmployeeEO
+
+package com.service.hr.model.eo
+
+import oracle.jbo.script.annotation.MessageParameterExpression;
+
+@MessageParameterExpression(validatorName="SalaryRuleRange", name="ResExpressions_0", attributeName="Salary")
+def Salary_SalaryRuleRange_ResExpressions_0_MessageParameterValues()
+{
+JobId
+}
+

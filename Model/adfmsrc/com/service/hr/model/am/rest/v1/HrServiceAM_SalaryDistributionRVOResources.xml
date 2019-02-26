@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="HrServiceAM_SalaryDistributionRVOResources" Package="com.service.hr.model.am.rest.v1"
+                usageMode="RESTClient">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+	<iterator Binds="SalaryDistributionRVO1" RangeSize="25" DataControl="HrServiceAMDataControl" id="SalaryDistributionRVO1Iter"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="SalaryDistributionRVO1Iter" id="salarydist" AccessorFolder="Always">
+      <nodeDefinition DefName="com.service.hr.model.vo.SalaryDistributionRVO"
+                      Name="com.service.hr.model.vo.SalaryDistributionRVO"/>
+    </tree>
+  </bindings>
+</pageDefinition>

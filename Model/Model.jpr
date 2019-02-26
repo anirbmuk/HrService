@@ -68,8 +68,8 @@
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="com.service.hr.RESTmodel"/>
-   <value n="jbo.JpxName" v="com.service.hr.RESTmodel.Model"/>
+   <value n="defaultPackage" v="com.service.hr.model"/>
+   <value n="jbo.JpxName" v="com.service.hr.model.Model"/>
    <value n="jbo.NoAttrEnumClasses" v="true"/>
    <value n="JboProject" v="true"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
@@ -255,7 +255,7 @@
             <string v="+**"/>
          </list>
          <list n="url-path">
-            <url path="../RESTModel/src/"/>
+            <url path="../Model/src/"/>
          </list>
       </hash>
    </hash>
@@ -366,6 +366,6 @@
       </list>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
-      <url n="outputDirectory" path="../RESTModel/classes/"/>
+      <url n="outputDirectory" path="../Model/classes/"/>
    </hash>
 </jpr:project>

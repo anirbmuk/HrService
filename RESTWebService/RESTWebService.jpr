@@ -86,6 +86,8 @@
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="ADFbcREST"/>
+         <string v="Java"/>
+         <string v="RESTWebServices"/>
          <string v="XML"/>
       </list>
    </hash>
@@ -196,6 +198,14 @@
             <url n="id" path="../lib/CORS.library"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="REST Client Lib"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="libraryReferences">
          <hash>
@@ -204,6 +214,14 @@
          </hash>
          <hash>
             <url n="id" path="../lib/CORS.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="REST Client Lib"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="BC4J Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
