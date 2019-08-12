@@ -86,7 +86,7 @@
     </ViewCriteriaRow>
   </ViewCriteria>
   <ViewLinkAccessor
-    Name="employees"
+    Name="EmployeesVO"
     ViewLink="com.service.hr.model.vo.vl.EmpDeptFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>

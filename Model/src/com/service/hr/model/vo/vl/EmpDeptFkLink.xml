@@ -21,7 +21,7 @@
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="employees"
+    Name="EmployeesVO"
     Cardinality="-1"
     Owner="com.service.hr.model.vo.EmployeesVO">
     <DesignTime>

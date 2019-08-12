@@ -17,13 +17,13 @@
     Name="EmployeesNoAuthView"
     ViewObjectName="com.service.hr.model.vo.EmployeesVO"/>
   <ViewUsage
-    Name="EmployeesVO2"
+    Name="EmployeesVO1"
     ViewObjectName="com.service.hr.model.vo.EmployeesVO"/>
   <ViewUsage
     Name="DepartmentsVO2"
     ViewObjectName="com.service.hr.model.vo.DepartmentsVO"/>
   <ViewUsage
-    Name="EmployeesVO3"
+    Name="EmployeesVO2"
     ViewObjectName="com.service.hr.model.vo.EmployeesVO"/>
   <ViewUsage
     Name="EmployeesAuthView"
@@ -35,7 +35,7 @@
     Name="EmpDeptFkLink1"
     ViewLinkObjectName="com.service.hr.model.vo.vl.EmpDeptFkLink"
     SrcViewUsageName="com.service.hr.model.am.HrServiceAM.DepartmentsVO1"
-    DstViewUsageName="com.service.hr.model.am.HrServiceAM.EmployeesVO2"
+    DstViewUsageName="com.service.hr.model.am.HrServiceAM.EmployeesVO1"
     Reversed="false"/>
   <ViewLinkUsage
     Name="DeptLocFkLink1"
@@ -47,6 +47,6 @@
     Name="EmpDeptFkLink2"
     ViewLinkObjectName="com.service.hr.model.vo.vl.EmpDeptFkLink"
     SrcViewUsageName="com.service.hr.model.am.HrServiceAM.DepartmentsVO2"
-    DstViewUsageName="com.service.hr.model.am.HrServiceAM.EmployeesVO3"
+    DstViewUsageName="com.service.hr.model.am.HrServiceAM.EmployeesVO2"
     Reversed="false"/>
 </AppModule>

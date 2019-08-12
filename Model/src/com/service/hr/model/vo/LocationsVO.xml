@@ -110,7 +110,7 @@
     </ViewCriteriaRow>
   </ViewCriteria>
   <ViewLinkAccessor
-    Name="departments"
+    Name="DepartmentsVO"
     ViewLink="com.service.hr.model.vo.vl.DeptLocFkLink"
     Type="oracle.jbo.RowIterator"
     IsUpdateable="false"/>

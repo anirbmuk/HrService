@@ -15,13 +15,7 @@
           <Item Value="DepartmentsVO"/>
         </Accessors>
       </nodeDefinition>
-      <nodeDefinition DefName="com.service.hr.model.vo.DepartmentsVO"
-                      Name="com.service.hr.model.vo.DepartmentsVO">
-        <Accessors>
-          <Item Value="EmployeesVO"/>
-        </Accessors>
-      </nodeDefinition>
-      <nodeDefinition DefName="com.service.hr.model.vo.EmployeesVO" Name="com.service.hr.model.vo.EmployeesVO"/>
+      <nodeDefinition DefName="com.service.hr.model.vo.DepartmentsVO" Name="com.service.hr.model.vo.DepartmentsVO"/>
     </tree>
   </bindings>
 </pageDefinition>

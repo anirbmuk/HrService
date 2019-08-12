@@ -26,6 +26,25 @@
   <EntityUsage
     Name="EmployeeEO"
     Entity="com.service.hr.model.eo.EmployeeEO"/>
+  <EntityUsage
+    Name="DepartmentEO"
+    Entity="com.service.hr.model.eo.DepartmentEO"
+    Association="com.service.hr.model.eo.as.EmpDeptFkAssoc"
+    AssociationEnd="com.service.hr.model.eo.as.EmpDeptFkAssoc.DepartmentEO1"
+    SourceUsage="com.service.hr.model.vo.EmployeesVO.EmployeeEO"
+    ReadOnly="true"
+    Reference="true"
+    DeleteParticipant="false"
+    JoinType="INNER JOIN">
+    <DesignTime>
+      <AttrArray Name="_dstAttributes">
+        <Item Value="com.service.hr.model.eo.DepartmentEO.DepartmentId"/>
+      </AttrArray>
+      <AttrArray Name="_srcAttributes">
+        <Item Value="com.service.hr.model.eo.EmployeeEO.DepartmentId"/>
+      </AttrArray>
+    </DesignTime>
+  </EntityUsage>
   <ViewAttribute
     Name="EmployeeId"
     IsUpdateable="while_insert"
@@ -122,6 +141,21 @@
       </CustomProperties>
     </Properties>
   </ViewAttribute>
+  <ViewAttribute
+    Name="DepartmentId1"
+    IsUpdateable="while_insert"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="DepartmentId"
+    EntityUsage="DepartmentEO"
+    AliasName="DEPARTMENT_ID1"/>
+  <ViewAttribute
+    Name="DepartmentName"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="DepartmentName"
+    EntityUsage="DepartmentEO"
+    AliasName="DEPARTMENT_NAME"/>
   <ViewCriteria
     Name="EmployeesNameCriteria"
     ViewObjectName="com.service.hr.model.vo.EmployeesVO"
@@ -166,6 +200,9 @@
         Required="Optional"/>
     </ViewCriteriaRow>
   </ViewCriteria>
+  <AttrArray Name="KeyAttributes">
+    <Item Value="EmployeeId"/>
+  </AttrArray>
   <ViewLinkAccessor
     Name="DepartmentsVO"
     ViewLink="com.service.hr.model.vo.vl.DeptMgrFkLink"

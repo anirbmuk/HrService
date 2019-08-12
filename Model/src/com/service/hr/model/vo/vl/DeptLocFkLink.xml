@@ -21,12 +21,12 @@
     </AttrArray>
   </ViewLinkDefEnd>
   <ViewLinkDefEnd
-    Name="departments"
+    Name="DepartmentsVO"
     Cardinality="-1"
     Owner="com.service.hr.model.vo.DepartmentsVO">
     <DesignTime>
       <Attr Name="_isUpdateable" Value="true"/>
-      <Attr Name="_finderName" Value="departments"/>
+      <Attr Name="_finderName" Value="DepartmentsVO"/>
     </DesignTime>
     <AttrArray Name="Attributes">
       <Item Value="com.service.hr.model.vo.DepartmentsVO.LocationId"/>
